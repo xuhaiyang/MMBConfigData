@@ -1,0 +1,7 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  #  这个的意思是随机指定个没使用的端口
+  port:  ${PORT:${SERVER_PORT:0}}
